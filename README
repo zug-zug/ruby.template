@@ -1,0 +1,16 @@
+SETUP:
+  1. nix-shell for ruby:
+    `nix-sh ruby`
+
+  2. Gemfile declares:
+    rake
+    minitest
+    pry
+    pry-doc
+
+  3. install deps into ./bundle
+    bundle install --standalone
+
+  4. normal dev flow:
+    bundle exec rake test          # run tests
+    bundle exec ./bin/foo          # run binaries
